@@ -409,7 +409,7 @@ data "aws_iam_policy_document" "user_assume" {
 
   statement {
     sid     = "EMRAssumeRole"
-    actions = ["sts:AssumeRole"]
+    actions = ["sts:AssumeRole", "sts:SetContext"]
 
     principals {
       type        = "Service"
